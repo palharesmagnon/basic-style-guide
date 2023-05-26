@@ -4,9 +4,8 @@
 header {
   position: sticky;
   top: 0;
-  background: #1C1B22;
+  background: var(--cl-800);
   z-index: 1;
-  border-bottom: 1px solid #3B3B3B;
 }
 
 nav a {
@@ -37,7 +36,7 @@ nav a {
     letter-spacing: 1px;
 
     & > a {
-      color: #007FFF;
+      color: var(--cl-accent);
       font-weight: 700;
       text-decoration: none;
 

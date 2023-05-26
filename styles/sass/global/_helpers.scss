@@ -2,8 +2,12 @@
   #HELPERS
 \*------------------------------------*/
 .border {
-  border: 1px solid #3B3B3B;
-  border-radius: 8px;
+  border: 1px solid var(--cl-400);
+  //border-radius: 8px;
+}
+
+.bg-200 {
+  background-color: var(--cl-200);
 }
 
 .decoration {
@@ -15,7 +19,7 @@
   bottom: 0;
   left: -8px;
   border-radius: 50%;
-  background-color: #007FFF;
+  background-color: var(--cl-accent);
   mix-blend-mode: multiply;
 }
 

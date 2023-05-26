@@ -1,4 +1,17 @@
 /*------------------------------------*\
+  #COLORS
+\*------------------------------------*/
+:root {
+  --cl-accent: #473BF0;
+  /* Neutrals */
+  --cl-000: #f8f9fa;
+  --cl-200: #dee2e6;
+  --cl-400: #adb5bd;
+  --cl-600: #495057;
+  --cl-800: #212529;
+}
+
+/*------------------------------------*\
   #RESET
 \*------------------------------------*/
 *, *::before, *::after {
@@ -23,6 +36,66 @@ img, svg, video, frame, figure {
 html {
   color-scheme: dark light;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cl-000);
+}
+
+/*------------------------------------*\
+  #GRID-SYSTEM
+\*------------------------------------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-1 {
+  grid-column: span 1/span 1;
+}
+
+.col-2 {
+  grid-column: span 2/span 2;
+}
+
+.col-3 {
+  grid-column: span 3/span 3;
+}
+
+.col-4 {
+  grid-column: span 4/span 4;
+}
+
+.col-5 {
+  grid-column: span 5/span 5;
+}
+
+.col-6 {
+  grid-column: span 6/span 6;
+}
+
+.col-7 {
+  grid-column: span 7/span 7;
+}
+
+.col-8 {
+  grid-column: span 8/span 8;
+}
+
+.col-9 {
+  grid-column: span 9/span 9;
+}
+
+.col-10 {
+  grid-column: span 10/span 10;
+}
+
+.col-11 {
+  grid-column: span 11/span 11;
+}
+
+.col-12 {
+  grid-column: span 12/span 12;
 }
 
 /*------------------------------------*\
@@ -72,8 +145,11 @@ small, .text_small {
   #HELPERS
 \*------------------------------------*/
 .border {
-  border: 1px solid #3B3B3B;
-  border-radius: 8px;
+  border: 1px solid var(--cl-400);
+}
+
+.bg-200 {
+  background-color: var(--cl-200);
 }
 
 .decoration {
@@ -85,7 +161,7 @@ small, .text_small {
   bottom: 0;
   left: -8px;
   border-radius: 50%;
-  background-color: #007FFF;
+  background-color: var(--cl-accent);
   mix-blend-mode: multiply;
 }
 
@@ -97,166 +173,11 @@ small, .text_small {
   margin: 0 auto;
 }
 
-/*------------------------------------*\
-  #GRID-SYSTEM
-\*------------------------------------*/
-.grid {
-  max-width: 1440px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0.5rem;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0.5rem 0;
-}
-@media (max-width: 576px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-.col-1 {
-  width: 8.3333333333%;
-  padding: 0.5rem;
-}
-
-.col-2 {
-  width: 16.6666666667%;
-  padding: 0.5rem;
-}
-
-.col-3 {
-  width: 25%;
-  padding: 0.5rem;
-}
-
-.col-4 {
-  width: 33.3333333333%;
-  padding: 0.5rem;
-}
-
-.col-5 {
-  width: 41.6666666667%;
-  padding: 0.5rem;
-}
-
-.col-6 {
-  width: 50%;
-  padding: 0.5rem;
-}
-
-.col-7 {
-  width: 58.3333333333%;
-  padding: 0.5rem;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-  padding: 0.5rem;
-}
-
-.col-9 {
-  width: 75%;
-  padding: 0.5rem;
-}
-
-.col-10 {
-  width: 83.3333333333%;
-  padding: 0.5rem;
-}
-
-.col-11 {
-  width: 91.6666666667%;
-  padding: 0.5rem;
-}
-
-.col-12 {
-  width: 100%;
-  padding: 0.5rem;
-}
-
-@media (max-width: 576px) {
-  .col-1 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-2 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-3 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-4 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-5 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-6 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-7 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-8 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-9 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-10 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-11 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-12 {
-    width: 100%;
-  }
-}
-
 header {
   position: sticky;
   top: 0;
-  background: #1C1B22;
+  background: var(--cl-800);
   z-index: 1;
-  border-bottom: 1px solid #3B3B3B;
 }
 
 nav a {
@@ -287,7 +208,7 @@ nav a:hover, nav a:active {
   letter-spacing: 1px;
 }
 #menu > li > a {
-  color: #007FFF;
+  color: var(--cl-accent);
   font-weight: 700;
   text-decoration: none;
 }
