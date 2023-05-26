@@ -1,0 +1,306 @@
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+ul {
+  padding-left: 2.5em;
+  margin: 1em 0;
+}
+
+img, svg, video, frame, figure {
+  display: block;
+}
+
+html {
+  color-scheme: dark light;
+  scroll-behavior: smooth;
+}
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+small, .text_small {
+  font-size: 0.833rem;
+}
+
+/*------------------------------------*\
+  #HELPERS
+\*------------------------------------*/
+.border {
+  border: 1px solid #3B3B3B;
+  border-radius: 8px;
+}
+
+.decoration {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 0;
+  left: -8px;
+  border-radius: 50%;
+  background-color: #007FFF;
+  mix-blend-mode: multiply;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+/*------------------------------------*\
+  #GRID-SYSTEM
+\*------------------------------------*/
+.grid {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+@media (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  padding: 0.5rem;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  padding: 0.5rem;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 0.5rem;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  padding: 0.5rem;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  padding: 0.5rem;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  padding: 0.5rem;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  padding: 0.5rem;
+}
+
+.col-9 {
+  width: 75%;
+  padding: 0.5rem;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  padding: 0.5rem;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  padding: 0.5rem;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .col-1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-7 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-8 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-9 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-10 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-11 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-12 {
+    width: 100%;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #1C1B22;
+  z-index: 1;
+  border-bottom: 1px solid #3B3B3B;
+}
+
+nav a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover, nav a:active {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+#menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+@media (max-width: 576px) {
+  #menu {
+    flex-direction: column;
+  }
+}
+#menu > li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#menu > li > a {
+  color: #007FFF;
+  font-weight: 700;
+  text-decoration: none;
+}
+#menu > li > a:hover, #menu > li > a:active {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.sample-code {
+  border: 1px solid #3B3B3B;
+  border-radius: 8px;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

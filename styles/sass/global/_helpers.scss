@@ -1,0 +1,28 @@
+/*------------------------------------*\
+  #HELPERS
+\*------------------------------------*/
+.border {
+  border: 1px solid #3B3B3B;
+  border-radius: 8px;
+}
+
+.decoration {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 0;
+  left: -8px;
+  border-radius: 50%;
+  background-color: #007FFF;
+  mix-blend-mode: multiply;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+}

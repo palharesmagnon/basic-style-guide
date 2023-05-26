@@ -1,0 +1,50 @@
+@use "../abstract/functions" as f;
+@use "../abstract/mixins" as m;
+
+header {
+  position: sticky;
+  top: 0;
+  background: #1C1B22;
+  z-index: 1;
+  border-bottom: 1px solid #3B3B3B;
+}
+
+nav a {
+  font-size: f.rem(16);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
+
+#menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+
+  @include m.respond-to('small') {
+    flex-direction: column;
+  }
+
+  & > li {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    & > a {
+      color: #007FFF;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover, &:active {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+      }
+    }
+  }
+}

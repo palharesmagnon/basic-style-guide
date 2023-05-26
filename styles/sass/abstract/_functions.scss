@@ -1,0 +1,5 @@
+@use "sass:math" as m;
+
+@function rem($p) {
+  @return m.div($p, 16) + rem;
+}
