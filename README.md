@@ -1,5 +1,6 @@
 # Basic Front-end Style Guide
 This basic style guide was designed to implement the methodological concepts discussed by Anna Debenham in her book: "Front-end Style Guides."
+Check the [live page](https://palharesmagnon.github.io/basic-style-guide/)
 
 ## Fork this repo to play a little
 If you haven't had any experience with the [Sass](https://sass-lang.com/guide) preprocessor for CSS yet, I suggest following the steps below to run the project on your machine. And remember, only modify the [.SCSS](https://sass-lang.com/documentation/syntax#scss) files.
