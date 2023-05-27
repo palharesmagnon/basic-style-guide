@@ -19,7 +19,7 @@
   bottom: 0;
   left: -8px;
   border-radius: 50%;
-  background-color: var(--cl-accent);
+  background-color: var(--cl-primary);
   mix-blend-mode: multiply;
 }
 
@@ -27,6 +27,14 @@
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .center {
   margin: 0 auto;
+}
+
+.max-width {
+  max-width: 90em;
 }

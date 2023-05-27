@@ -1,0 +1,32 @@
+{
+  "name": "basic-style-guide",
+  "version": "1.0.0",
+  "description": "A basic style guide to follow along with Anna Debenham book: Front-end Style Guides",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palharesmagnon/basic-style-guide.git"
+  },
+  "keywords": [
+    "front-end",
+    "style",
+    "sass",
+    "css",
+    "js",
+    "grid-system",
+    "typography"
+  ],
+  "author": "Palhares, MAGNON",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/palharesmagnon/basic-style-guide/issues"
+  },
+  "homepage": "https://github.com/palharesmagnon/basic-style-guide#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "sass": "^1.62.1"
+  }
+}

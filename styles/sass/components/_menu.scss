@@ -29,6 +29,7 @@ nav a {
 
   @include m.respond-to('small') {
     flex-direction: column;
+    text-align: center;
   }
 
   & > li {
@@ -36,7 +37,6 @@ nav a {
     letter-spacing: 1px;
 
     & > a {
-      color: var(--cl-accent);
       font-weight: 700;
       text-decoration: none;
 

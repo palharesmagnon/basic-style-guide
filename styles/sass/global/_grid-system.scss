@@ -4,46 +4,15 @@
 /*------------------------------------*\
   #GRID-SYSTEM
 \*------------------------------------*/
-//.grid {
-//  max-width: 1440px;
-//  display: flex;
-//  flex-direction: column;
-//  padding: 0 .5rem;
-//}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: .5rem;
 }
 
 @for $i from 1 through 12 {
   .col-#{$i} {
     grid-column: span $i / span $i;
+    padding: .5rem;
   }
 }
-
-//.row {
-//  display: flex;
-//  flex-direction: row;
-//  flex-wrap: wrap;
-//  padding: .5rem 0;
-//
-//  @include mixins.respond-to('small') {
-//    flex-direction: column;
-//  }
-//}
-
-//@for $i from 1 through 12 {
-//  .col-#{$i} {
-//    width: calc(100% / 12 * $i);
-//    padding: .5rem;
-//  }
-//}
-
-//@for $i from 1 through 12 {
-//  .col-#{$i} {
-//    @include mixins.respond-to('small') {
-//      width: 100%;
-//    }
-//  }
-//}

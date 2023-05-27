@@ -2,13 +2,16 @@
   #COLORS
 \*------------------------------------*/
 :root {
-  --cl-accent: #473BF0;
+  --cl-primary: #473BF0;
+  --cl-secondary: #7d3bf0;
   /* Neutrals */
   --cl-000: #f8f9fa;
   --cl-200: #dee2e6;
   --cl-400: #adb5bd;
   --cl-600: #495057;
   --cl-800: #212529;
+  /* System UI */
+  --cl-caution: #E1244D;
 }
 
 /*------------------------------------*\
@@ -40,6 +43,7 @@ html {
 
 body {
   background-color: var(--cl-000);
+  color: var(--cl-800);
 }
 
 /*------------------------------------*\
@@ -48,54 +52,67 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 0.5rem;
 }
 
 .col-1 {
   grid-column: span 1/span 1;
+  padding: 0.5rem;
 }
 
 .col-2 {
   grid-column: span 2/span 2;
+  padding: 0.5rem;
 }
 
 .col-3 {
   grid-column: span 3/span 3;
+  padding: 0.5rem;
 }
 
 .col-4 {
   grid-column: span 4/span 4;
+  padding: 0.5rem;
 }
 
 .col-5 {
   grid-column: span 5/span 5;
+  padding: 0.5rem;
 }
 
 .col-6 {
   grid-column: span 6/span 6;
+  padding: 0.5rem;
 }
 
 .col-7 {
   grid-column: span 7/span 7;
+  padding: 0.5rem;
 }
 
 .col-8 {
   grid-column: span 8/span 8;
+  padding: 0.5rem;
 }
 
 .col-9 {
   grid-column: span 9/span 9;
+  padding: 0.5rem;
 }
 
 .col-10 {
   grid-column: span 10/span 10;
+  padding: 0.5rem;
 }
 
 .col-11 {
   grid-column: span 11/span 11;
+  padding: 0.5rem;
 }
 
 .col-12 {
   grid-column: span 12/span 12;
+  padding: 0.5rem;
 }
 
 /*------------------------------------*\
@@ -110,7 +127,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 1.5;
@@ -118,27 +135,40 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 2.488rem;
+  font-size: 4.209rem;
 }
 
 h2 {
-  font-size: 2.074rem;
+  font-size: 3.157rem;
 }
 
 h3 {
-  font-size: 1.728rem;
+  font-size: 2.369rem;
 }
 
 h4 {
-  font-size: 1.44rem;
+  font-size: 1.777rem;
 }
 
-h5 {
-  font-size: 1.2rem;
+h5, .subtitle {
+  font-size: 1.333rem;
 }
 
 small, .text_small {
-  font-size: 0.833rem;
+  font-size: 0.75rem;
+}
+
+a {
+  color: var(--cl-primary);
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: var(--cl-caution);
+}
+a:visited {
+  color: var(--cl-secondary);
 }
 
 /*------------------------------------*\
@@ -161,7 +191,7 @@ small, .text_small {
   bottom: 0;
   left: -8px;
   border-radius: 50%;
-  background-color: var(--cl-accent);
+  background-color: var(--cl-primary);
   mix-blend-mode: multiply;
 }
 
@@ -169,8 +199,16 @@ small, .text_small {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .center {
   margin: 0 auto;
+}
+
+.max-width {
+  max-width: 90em;
 }
 
 header {
@@ -201,6 +239,7 @@ nav a:hover, nav a:active {
 @media (max-width: 576px) {
   #menu {
     flex-direction: column;
+    text-align: center;
   }
 }
 #menu > li {
@@ -208,7 +247,6 @@ nav a:hover, nav a:active {
   letter-spacing: 1px;
 }
 #menu > li > a {
-  color: var(--cl-accent);
   font-weight: 700;
   text-decoration: none;
 }
