@@ -12,6 +12,7 @@
 
 [class^="col-"] {
     grid-column: span 12 / span 12;
+    padding: 1rem;
 }
 
 @for $i from 1 through 12 {
@@ -19,6 +20,5 @@
         @include mixins.respond-to(medium) {
             grid-column: span $i / span $i;
         }
-        padding: 1rem;
     }
 }
