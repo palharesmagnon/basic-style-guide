@@ -1,40 +1,14 @@
 /*------------------------------------*\
   #HELPERS
 \*------------------------------------*/
-.border {
-  border: 1px solid var(--cl-400);
-  //border-radius: 8px;
+/* #H_TYPOGRAPHY */
+.h_upper {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.bg-200 {
-  background-color: var(--cl-200);
+.h_bold {
+    font-weight: bold;
 }
 
-.decoration {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 1.5em;
-  height: 1.5em;
-  bottom: 0;
-  left: -8px;
-  border-radius: 50%;
-  background-color: var(--cl-primary);
-  mix-blend-mode: multiply;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.center {
-  margin: 0 auto;
-}
-
-.max-width {
-  max-width: 90em;
-}
+/* #H_GRID_SYSTEM */

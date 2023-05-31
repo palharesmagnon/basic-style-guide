@@ -2,15 +2,13 @@
   #COLORS
 \*------------------------------------*/
 :root {
-  --cl-primary: #473BF0;
-  --cl-secondary: #7d3bf0;
-  /* Neutrals */
-  --cl-000: #f8f9fa;
-  --cl-200: #dee2e6;
-  --cl-400: #adb5bd;
-  --cl-600: #495057;
-  --cl-800: #212529;
-  /* System UI */
-  --cl-caution: #E1244D;
-
+  /* neutrals */
+  --cl-800: #000000;
+  --cl-600: #CCCCCC;
+  --cl-400: #E8E8E8;
+  --cl-200: #F4F4F4;
+  --cl-000: #FFFFFF;
+  /* semantic */
+  --cl-red: #BB3825;
+  --cl-blue: #2455C3;
 }

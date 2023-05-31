@@ -21,11 +21,6 @@ img, svg, video, frame, figure {
 }
 
 html {
-  color-scheme: dark light;
+  color-scheme: only light;
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--cl-000);
-  color: var(--cl-800);
 }
