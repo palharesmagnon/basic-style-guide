@@ -14,18 +14,16 @@
 }
 
 /* #H_GRID_SYSTEM */
-@for $i from 1 through 23 {
-    .grid div[class^="col-"] {
-        //        border: 1px solid #ffccd5;
-        background-color: rgba(255, 179, 193, .6);
-        border-radius: 4px;
-        font-family: var(--ff-inter);
+.grid div[class^="col-"] {
+    background-color: rgba(255, 179, 193, .6);
+    border-radius: 4px;
+    font-family: var(--ff-inter);
 
-        & div[class^="col-"] {
-            background-color: rgba(255, 143, 163, .6);
-        }
+    & div[class^="col-"] {
+        background-color: rgba(255, 143, 163, .6);
     }
 }
+
 
 //TODO: Move H_GRID_SYSTEM to another file
 body {

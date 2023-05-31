@@ -75,204 +75,6 @@ body {
   background-color: rgba(255, 143, 163, 0.6);
 }
 
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
-.grid div[class^=col-] {
-  background-color: rgba(255, 179, 193, 0.6);
-  border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.6);
-}
-
 body {
   display: grid;
   grid-auto-rows: 4rem auto auto;
@@ -404,8 +206,11 @@ nav a {
   gap: 0.5rem;
 }
 
-.col-1 {
+[class^=col-] {
   grid-column: span 12/span 12;
+}
+
+.col-1 {
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -415,7 +220,6 @@ nav a {
 }
 
 .col-2 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -425,7 +229,6 @@ nav a {
 }
 
 .col-3 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -435,7 +238,6 @@ nav a {
 }
 
 .col-4 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -445,7 +247,6 @@ nav a {
 }
 
 .col-5 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -455,7 +256,6 @@ nav a {
 }
 
 .col-6 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -465,7 +265,6 @@ nav a {
 }
 
 .col-7 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -475,7 +274,6 @@ nav a {
 }
 
 .col-8 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -485,7 +283,6 @@ nav a {
 }
 
 .col-9 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -495,7 +292,6 @@ nav a {
 }
 
 .col-10 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -505,7 +301,6 @@ nav a {
 }
 
 .col-11 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
@@ -515,7 +310,6 @@ nav a {
 }
 
 .col-12 {
-  grid-column: span 12/span 12;
   padding: 1rem;
 }
 @media (min-width: 992px) {
