@@ -1,3 +1,5 @@
+@use "../../abstract/mixins";
+
 nav {
     width: 100%;
     background-color: var(--cl-800);
@@ -48,6 +50,13 @@ nav a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+
+    @include mixins.respond-to(medium) {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
 
     li {
         margin-bottom: 1rem;

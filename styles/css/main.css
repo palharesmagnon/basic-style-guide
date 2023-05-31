@@ -277,12 +277,20 @@ body {
   display: grid;
   grid-auto-rows: 4rem auto auto;
 }
+@media (min-width: 992px) {
+  body {
+    grid-auto-rows: 4rem auto 6rem;
+  }
+}
 
 header {
+  background-color: var(--cl-800);
+  width: 100%;
   display: flex;
 }
 
 main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -299,6 +307,15 @@ footer {
   padding: 2rem;
   background-color: var(--cl-200);
   border-top: 1px solid var(--cl-400);
+}
+
+.container {
+  width: 100%;
+}
+
+main, nav, .container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
@@ -365,6 +382,14 @@ nav a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  #menu {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
 }
 #menu li {
   margin-bottom: 1rem;
@@ -381,62 +406,62 @@ nav a {
 
 .col-1 {
   grid-column: span 1/span 1;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-2 {
   grid-column: span 2/span 2;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-3 {
   grid-column: span 3/span 3;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-4 {
   grid-column: span 4/span 4;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-5 {
   grid-column: span 5/span 5;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-6 {
   grid-column: span 6/span 6;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-7 {
   grid-column: span 7/span 7;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-8 {
   grid-column: span 8/span 8;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-9 {
   grid-column: span 9/span 9;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-10 {
   grid-column: span 10/span 10;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-11 {
   grid-column: span 11/span 11;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .col-12 {
   grid-column: span 12/span 12;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 /*------------------------------------*\
