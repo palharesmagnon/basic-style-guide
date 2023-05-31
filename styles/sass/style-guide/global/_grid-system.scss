@@ -5,14 +5,16 @@
   #GRID-SYSTEM
 \*------------------------------------*/
 .grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    //    grid-template-rows: 1fr;
+    gap: .5rem;
+    //    padding: .5rem;
 }
 
 @for $i from 1 through 12 {
-  .col-#{$i} {
-    grid-column: span $i / span $i;
-    padding: .5rem;
-  }
+    .col-#{$i} {
+        grid-column: span $i / span $i;
+        padding: 1rem 1rem;
+    }
 }

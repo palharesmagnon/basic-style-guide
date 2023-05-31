@@ -2,8 +2,8 @@
   #FONTS
 \*------------------------------------*/
 :root {
-  --ff-inter: font-family "Inter", sans-serif;
-  --ff-playfair: font-family "Playfair", serif;
+  --ff-inter: "Inter", sans-serif;
+  --ff-vollkirn: "Vollkorn", serif;
 }
 
 /*------------------------------------*\
@@ -48,6 +48,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-height: 100vh;
+}
+
 /*------------------------------------*\
   #HELPERS
 \*------------------------------------*/
@@ -62,88 +66,391 @@ html {
 }
 
 /* #H_GRID_SYSTEM */
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+.grid div[class^=col-] {
+  background-color: rgba(255, 179, 193, 0.6);
+  border-radius: 4px;
+  font-family: var(--ff-inter);
+}
+.grid div[class^=col-] div[class^=col-] {
+  background-color: rgba(255, 143, 163, 0.6);
+}
+
+body {
+  display: grid;
+  grid-auto-rows: 4rem auto auto;
+}
+
+header {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+main .main-header {
+  margin-bottom: 1rem;
+}
+
+.component {
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--cl-200);
+  border-top: 1px solid var(--cl-400);
+}
+
+a {
+  color: var(--cl-blue);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--cl-blue);
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: var(--cl-red);
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--cl-800);
+  padding: 1rem;
+}
+
+nav, #menu {
+  font-family: var(--ff-inter);
+  font-weight: 700;
+}
+
+nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--cl-000);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+.button:hover, .button:focus {
+  text-decoration: none;
+  background-color: var(--cl-red);
+  filter: drop-shadow(0px 4px 4px var(--cl-600));
+  outline: 0;
+}
+.button:active {
+  filter: none;
+}
+.button--dark {
+  background-color: var(--cl-800);
+  color: var(--cl-000);
+}
+.button--dark:visited {
+  color: var(--cl-000);
+}
+
+#menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#menu li {
+  margin-bottom: 1rem;
+}
+
 /*------------------------------------*\
   #GRID-SYSTEM
 \*------------------------------------*/
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 .col-1 {
   grid-column: span 1/span 1;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-2 {
   grid-column: span 2/span 2;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-3 {
   grid-column: span 3/span 3;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-4 {
   grid-column: span 4/span 4;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-5 {
   grid-column: span 5/span 5;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-6 {
   grid-column: span 6/span 6;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-7 {
   grid-column: span 7/span 7;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-8 {
   grid-column: span 8/span 8;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-9 {
   grid-column: span 9/span 9;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-10 {
   grid-column: span 10/span 10;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-11 {
   grid-column: span 11/span 11;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .col-12 {
   grid-column: span 12/span 12;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 /*------------------------------------*\
   #TYPOGRAPHY
 \*------------------------------------*/
 body {
-  font-family: var(--ff-playfair);
+  font-family: var(--ff-vollkirn);
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
 }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 0.2em;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 1.5;
@@ -151,31 +458,31 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 5.653rem;
+  font-size: 4.209rem;
 }
 
 h2 {
-  font-size: 3.998rem;
+  font-size: 3.157rem;
 }
 
 h3 {
-  font-size: 2.827rem;
+  font-size: 2.369rem;
 }
 
 h4 {
-  font-size: 1.999rem;
+  font-size: 1.777rem;
 }
 
 h5, .subtitle {
-  font-size: 1.414rem;
+  font-size: 1.333rem;
 }
 
 small, .text_small {
-  font-size: 0.707rem;
+  font-size: 0.75rem;
 }
 
 .text_medium {
-  font-size: 2.827rem;
+  font-size: 2.369rem;
 }
 
 /*# sourceMappingURL=main.css.map */

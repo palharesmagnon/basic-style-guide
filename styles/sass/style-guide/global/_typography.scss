@@ -4,15 +4,14 @@
   #TYPOGRAPHY
 \*------------------------------------*/
 body {
-    font-family: var(--ff-playfair);
+    font-family: var(--ff-vollkirn);
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: .5em;
 }
 
 h1, h2, h3, h4, h5 {
-    margin-bottom: .2em;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -20,29 +19,29 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 5.653rem;
+    font-size: 4.209rem;
 }
 
 h2 {
-    font-size: 3.998rem;
+    font-size: 3.157rem;
 }
 
 h3 {
-    font-size: 2.827rem;
+    font-size: 2.369rem;
 }
 
 h4 {
-    font-size: 1.999rem;
+    font-size: 1.777rem;
 }
 
 h5, .subtitle {
-    font-size: 1.414rem;
+    font-size: 1.333rem;
 }
 
 small, .text_small {
-    font-size: 0.707rem;
+    font-size: 0.75rem;
 }
 
 .text_medium {
-    font-size: 2.827rem;
+    font-size: 2.369rem;
 }

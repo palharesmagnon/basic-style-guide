@@ -1,0 +1,23 @@
+@use "../../abstract/functions" as f;
+
+a {
+    color: var(--cl-blue);
+    text-decoration: none;
+
+    &:visited {
+        color: var(--cl-blue);
+    }
+
+    &:hover, &:focus, &:active {
+        text-decoration: underline;
+        color: var(--cl-red);
+    }
+
+    &:focus {
+        outline: thin dotted;
+    }
+
+    &:hover, &:active {
+        outline: 0;
+    }
+}
