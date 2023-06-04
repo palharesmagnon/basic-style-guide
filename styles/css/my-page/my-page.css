@@ -2,123 +2,35 @@
   #HELPERS
 \*------------------------------------*/
 /* #H_TYPOGRAPHY */
-.h_upper {
+.h_font_family--000 {
+  font-family: var(--ff-000);
+}
+
+.h_font_transform--upper {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.h_bold {
+.h_font_weight--bold {
   font-weight: bold;
 }
 
-/* #H_GRID_SYSTEM */
-.grid div[class^=col-] {
+/* #H_LAYOUT */
+.h_layout_bg--000 {
   background-color: rgba(255, 179, 193, 0.6);
+}
+
+.h_layout_bg--200 {
+  background-color: rgba(255, 179, 193, 0.6);
+}
+
+.h_layout_border_radius {
   border-radius: 4px;
-  font-family: var(--ff-inter);
-}
-.grid div[class^=col-] div[class^=col-] {
-  background-color: rgba(255, 143, 163, 0.4);
 }
 
-body {
-  display: grid;
-  grid-auto-rows: 4rem auto auto;
-}
-@media (min-width: 992px) {
-  body {
-    grid-auto-rows: 4rem auto 6rem;
-  }
-}
-
-header {
-  background-color: var(--cl-800);
-  width: 100%;
-  display: flex;
-}
-
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
-}
-main .main-header {
-  margin-bottom: 1rem;
-}
-
-.component {
-  margin-bottom: 2rem;
-}
-
-footer {
-  padding: 2rem;
-  background-color: var(--cl-200);
-  border-top: 1px solid var(--cl-400);
-}
-
-.container {
-  width: 100%;
-}
-
-main, nav, .container {
-  max-width: 1440px;
+.h_layout_container {
+  max-width: 90em;
   margin: 0 auto;
-}
-
-a {
-  color: var(--cl-blue);
-  text-decoration: none;
-}
-a:visited {
-  color: var(--cl-blue);
-}
-a:hover, a:focus, a:active {
-  text-decoration: underline;
-  color: var(--cl-red);
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
-}
-
-nav {
-  width: 100%;
-  background-color: var(--cl-800);
-  padding: 1rem;
-}
-
-nav, #menu {
-  font-family: var(--ff-inter);
-  font-weight: 700;
-}
-
-nav a {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--cl-000);
-}
-
-#menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-@media (min-width: 992px) {
-  #menu {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-  }
-}
-#menu li {
-  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=my-page.css.map */

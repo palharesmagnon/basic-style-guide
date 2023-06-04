@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Vollkorn:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./styles/css/dist/dist.css">
     <link rel="stylesheet" href="./styles/css/my-page/my-page.css">
     <title>Basic Style Guide</title>
@@ -15,81 +10,98 @@
 <body>
 
 <header id="header">
-    <nav>
-        <a href="#menu">Menu &darr;</a>
-    </nav>
-</header>
-
-<main>
-    <div class="main-header">
+    <div class="h_layout_container">
         <h1 class="h_upper h_bold">Front-end Style Guide</h1>
         <p class="subtitle">A basic style guide to follow along with <a
             href="http://thewebahead.net/guest/anna-debenham" target="blank">Anna Debenham's</a> book: Front-end Style
             Guides</p>
     </div>
-    <section class="component">
-        <div class="component__header">
-            <h2 class="text_medium h_upper h_bold">12 Columns Grid System</h2>
-        </div>
+</header>
 
-        <div class="grid">
-            <div class="col-12">
-                <h1>12 columns</h1>
-                <p class="subtitle">Header</p>
+<div class="h_layout_container">
+    <aside>
+        <button type="button">Components</button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Grid System</a>
+                </li>
+                <li>
+                    <a href="#">Typography</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="component">
+            <div class="component__header">
+                <h2 class="text_medium h_upper h_bold">12 Columns Grid System</h2>
             </div>
-            <div class="col-4">
-                <h2>4 columns</h2>
-                <p class="subtitle">Aside</p>
-            </div>
-            <div class="col-8">
-                <h2>8 columns</h2>
-                <p class="subtitle">Some content subtitle</p>
-            </div>
-            <div class="col-12">
-                <h2>12 columns</h2>
-                <p class="subtitle">Some content subtitle</p>
+            <div class="component__content">
                 <div class="grid">
-                    <div class="col-4">
-                        <h2>4 columns</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eaque. Quos blanditiis
-                            pariatur commodi inventore!</p>
+                    <div class="col-12 h_layout_bg--000 h_layout_border_radius">
+                        <h1>12 columns</h1>
+                        <p class="subtitle">Header</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 h_layout_bg--000 h_layout_border_radius">
                         <h2>4 columns</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eaque. Quos blanditiis
-                            pariatur commodi inventore!</p>
+                        <p class="subtitle">Aside</p>
                     </div>
-                    <div class="col-4">
-                        <h2>4 coloumns</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eaque. Quos blanditiis
-                            pariatur commodi inventore!</p>
+                    <div class="col-8 h_layout_bg--000 h_layout_border_radius">
+                        <h2>8 columns</h2>
+                        <p class="subtitle">Some content subtitle</p>
+                    </div>
+                    <div class="col-12 h_layout_bg--000 h_layout_border_radius">
+                        <h2>12 columns</h2>
+                        <p class="subtitle">Some content subtitle</p>
+                        <div class="grid">
+                            <div class="col-4 h_layout_bg--200 h_layout_border_radius">
+                                <h2>4 columns</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eaque. Quos
+                                    blanditiis
+                                    pariatur commodi inventore!</p>
+                            </div>
+                            <div class="col-4 h_layout_bg--200 h_layout_border_radius">
+                                <h2>4 columns</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eaque. Quos
+                                    blanditiis
+                                    pariatur commodi inventore!</p>
+                            </div>
+                            <div class="col-4 h_layout_bg--200 h_layout_border_radius">
+                                <h2>4 coloumns</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eaque. Quos
+                                    blanditiis
+                                    pariatur commodi inventore!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-</main>
+        </section>
+    </main>
+</div>
 
 <footer>
-    <div class="container">
-        <ul id="menu">
-            <li>
-                <a href="./index.html">Grid System</a>
-            </li>
-            <li>
-                <a href="./pages/typography.html">Typography</a>
-            </li>
-            <li>
-                <a href="#header">Back to Top &uarr;</a>
-            </li>
-        </ul>
+    <div class="h_layout_container">
+        <div role="navigation" aria-label="Social links">
+            <h3>Contact-me 👇</h3>
+            <ul>
+                <li><a href="#">Social Network</a></li>
+                <li><a href="#">Social Network</a></li>
+            </ul>
+            <p>Until next time! 🤓</p>
+        </div>
+        <section>
+            <h4>MIT License</h4>
+            <a href="https://opensource.org/licenses/MIT" target="_blank">License<span>MIT</span></a>
+        </section>
     </div>
 </footer>
 
