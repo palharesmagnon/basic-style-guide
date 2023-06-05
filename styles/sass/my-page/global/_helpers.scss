@@ -1,7 +1,7 @@
-@use "../../1_misc/abstract/mixins";
+@use "../../misc/abstract/mixins" as m;
 
 /*------------------------------------*\
-  #HELPERS
+  #MY-PAGE-HELPERS
 \*------------------------------------*/
 /* #H_TYPOGRAPHY */
 .h_font_family--000 {
@@ -19,11 +19,11 @@
 
 /* #H_LAYOUT */
 .h_layout_bg--000 {
-    background-color: rgba(255, 179, 193, .6);
+    background-color: rgb(255, 179, 193);
 }
 
 .h_layout_bg--200 {
-    background-color: rgba(255, 179, 193, .6);
+    background-color: rgb(253, 163, 180);
 }
 
 .h_layout_border_radius {
@@ -33,4 +33,10 @@
 .h_layout_container {
     max-width: 90em;
     margin: 0 auto;
+}
+
+.h_layout_element--hidden {
+    @include m.respond-to(medium) {
+        display: none;
+    }
 }

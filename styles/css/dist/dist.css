@@ -59,6 +59,11 @@ body {
   min-height: 100vh;
 }
 
+*:focus {
+  outline: 2px dotted var(--cl-blue);
+  outline-offset: 2px;
+}
+
 /*------------------------------------*\
   #GRID-SYSTEM
 \*------------------------------------*/

@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #HELPERS
+  #MY-PAGE-HELPERS
 \*------------------------------------*/
 /* #H_TYPOGRAPHY */
 .h_font_family--000 {
@@ -17,11 +17,11 @@
 
 /* #H_LAYOUT */
 .h_layout_bg--000 {
-  background-color: rgba(255, 179, 193, 0.6);
+  background-color: rgb(255, 179, 193);
 }
 
 .h_layout_bg--200 {
-  background-color: rgba(255, 179, 193, 0.6);
+  background-color: rgb(253, 163, 180);
 }
 
 .h_layout_border_radius {
@@ -31,6 +31,141 @@
 .h_layout_container {
   max-width: 90em;
   margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .h_layout_element--hidden {
+    display: none;
+  }
+}
+
+/*------------------------------------*\
+  #MY-PAGE-LAYOUT
+\*------------------------------------*/
+body {
+  background-color: #f1f1f1;
+}
+
+header, aside, main {
+  padding: 1rem;
+}
+
+.my-page-grid {
+  display: grid;
+  grid-template-areas: "h" "m" "a";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+header {
+  grid-area: h;
+}
+
+aside {
+  grid-area: a;
+  justify-self: center;
+  text-align: center;
+}
+
+main {
+  grid-area: m;
+}
+
+@media (min-width: 992px) {
+  .my-page-grid {
+    display: grid;
+    grid-template-areas: "a h" "a m";
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 10vh auto;
+  }
+  header {
+    grid-area: h;
+  }
+  aside {
+    grid-area: a;
+    justify-self: left;
+    text-align: left;
+  }
+  main {
+    grid-area: m;
+  }
+}
+/*------------------------------------*\
+  #MY-PAGE-LINKS
+\*------------------------------------*/
+a, a:visited {
+  color: var(--cl-blue);
+  text-decoration: none;
+}
+a:hover, a:visited:hover {
+  color: var(--cl-red);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:active, a:visited:active {
+  text-decoration: none;
+}
+
+.license-badge {
+  color: var(--cl-000) !important;
+  text-decoration: none !important;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.license-badge__wrapper {
+  display: inline-flex;
+}
+.license-badge__wrapper span:nth-child(1) {
+  background-color: #515151;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0 0.4rem 0 0.4rem;
+}
+.license-badge__wrapper span:nth-child(2) {
+  background-color: #CCA418;
+  padding: 0 0.4rem 0 0.4rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*------------------------------------*\
+  #MY-PAGE-MENU
+\*------------------------------------*/
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.navigation i {
+  color: var(--cl-800);
+}
+
+/*------------------------------------*\
+  #MY-PAGE-FORMS
+\*------------------------------------*/
+button[type=button] {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  padding: 0 0.2rem;
+  background-color: var(--cl-800);
+  color: var(--cl-000);
+  border: none;
+  border-radius: 4px;
+}
+button[type=button]:active {
+  background-color: var(--cl-red);
+}
+@media (min-width: 992px) {
+  button[type=button]:hover {
+    background-color: var(--cl-red);
+    box-shadow: 0 2px 4px var(--cl-800);
+  }
+  button[type=button]:active {
+    box-shadow: none;
+  }
 }
 
 /*# sourceMappingURL=my-page.css.map */
