@@ -1,0 +1,42 @@
+@use "../../../misc/abstract/functions" as f;
+/*------------------------------------*\
+  #MY-PAGE-LINKS
+\*------------------------------------*/
+a, a:visited {
+  color: var(--cl-blue);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--cl-red);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.license-badge {
+  color: var(--cl-000) !important;
+  text-decoration: none !important;
+  font-size: .8rem;
+  letter-spacing: 1px;
+
+  &__wrapper {
+    display: inline-flex;
+
+    span:nth-child(1) {
+      background-color: #515151;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      padding: 0 .4rem 0 .4rem;
+    }
+    span:nth-child(2) {
+      background-color: #CCA418;
+      padding: 0 .4rem 0 .4rem;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
