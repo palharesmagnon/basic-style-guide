@@ -18,9 +18,5 @@ html {
 }
 
 body {
-  background-color: var(--clr-bg-base);
-
-  @include m.prefers('light') {
-    background-color: var(--clr-bg-light);
-  }
+  background-color: var(--grayscale-400);
 }
