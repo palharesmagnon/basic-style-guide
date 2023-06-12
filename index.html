@@ -3,89 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/css/fontello/css/animation.css">
-    <link rel="stylesheet" href="./styles/css/fontello/css/fontello.css">
-    <link rel="stylesheet" href="./styles/css/dist/dist.css">
-    <link rel="stylesheet" href="./styles/css/my-page/my-page.css">
-    <title>Basic Style Guide</title>
+    <link rel="stylesheet" href="dist/css/basic-style.css">
+    <title>Boilerplate</title>
 </head>
-<body class="my-page-grid h_layout_container">
-
-<header id="header">
-    <div>
-        <h1 class="h_upper h_bold">Front-end Style Guide</h1>
-        <p class="subtitle">A basic style guide to follow along with <a
-                href="http://thewebahead.net/guest/anna-debenham" target="blank">Anna Debenham's</a> book: Front-end
-            Style
-            Guides</p>
-        <a href="#aside" class="h_layout_element--hidden">Menu</a>
-    </div>
+<body class="h_flex h_flex--column">
+<header>
+    <h1 class="h_upper h_bold">Front-end Style Guide</h1>
+    <p>A basic style guide to follow along with <a
+            href="http://thewebahead.net/guest/anna-debenham" target="blank">Anna Debenham's</a> book: Front-end
+        Style Guides</p>
 </header>
-
-<aside id="aside">
-    <h1>Menu</h1>
-    <nav>
-        <h5>Components</h5>
-        <ul class="navigation">
-            <li>
-                <a href="#">Grid System</a>
-            </li>
-            <li>
-                <a href="#">Typography</a>
-            </li>
-            <li class="h_layout_element--hidden">
-                <a href="#header">Back to Top</a>
-            </li>
-        </ul>
-    </nav>
-    <div role="navigation" aria-label="Social links">
-        <h5>Contact-me</h5>
-        <ul class="navigation">
-            <li><a href="https://github.com/palharesmagnon" target="_blank" class="text_small"><i class="icon-github"></i>&nbsp;palharesmagnon</a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/magnon-palhares/" target="_blank" class="text_small"><i class="icon-linkedin"></i>&nbsp;magnon-palhares
-            </a></li>
-        </ul>
-    </div>
-    <div role="navigation" aria-label="License">
-        <h5>License</h5>
-        <ul class="navigation">
-            <li>
-                <a href="https://opensource.org/licenses/MIT" target="_blank" class="license-badge">
-                <span class="license-badge__wrapper">
-                    <span>License</span>
-                    <span>MIT</span>
-                </span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</aside>
-
 <main>
-    <section class="component">
-        <div class="component__header">
-            <h2 class="text_medium h_upper h_bold">12 Columns Grid System</h2>
+    <article class="h_component">
+        <div class="h_component__header">
+            <p class="h_text_upper">12 Columns Grid System</p>
         </div>
-        <div class="component__content">
+        <div class="h_component__content">
             <div class="grid">
-                <div class="col-12 h_layout_bg--000 h_layout_border_radius">
+                <div class="col-12 h_bg_elevated h_border">
                     <h1>12 columns</h1>
-                    <p class="subtitle">Header</p>
+                    <p>Header</p>
                 </div>
-                <div class="col-4 h_layout_bg--000 h_layout_border_radius">
+                <div class="col-4 h_bg_elevated h_border">
                     <h2>4 columns</h2>
-                    <p class="subtitle">Aside</p>
+                    <p>Aside</p>
                 </div>
-                <div class="col-8 h_layout_bg--000 h_layout_border_radius">
+                <div class="col-8 h_bg_elevated h_border">
                     <h2>8 columns</h2>
-                    <p class="subtitle">Some content subtitle</p>
+                    <p>Some content subtitle</p>
                 </div>
-                <div class="col-12 h_layout_bg--000 h_layout_border_radius">
+                <div class="col-12 h_bg_elevated h_border">
                     <h2>12 columns</h2>
-                    <p class="subtitle">Some content subtitle</p>
+                    <p>Some content subtitle</p>
                     <div class="grid">
-                        <div class="col-4 h_layout_bg--200 h_layout_border_radius">
+                        <div class="col-4 h_bg_elevated h_border">
                             <h2>4 columns</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
                             <h3>Lorem ipsum dolor sit amet.</h3>
@@ -93,7 +44,7 @@
                                 blanditiis
                                 pariatur commodi inventore!</p>
                         </div>
-                        <div class="col-4 h_layout_bg--200 h_layout_border_radius">
+                        <div class="col-4 h_bg_elevated h_border">
                             <h2>4 columns</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
                             <h3>Lorem ipsum dolor sit amet.</h3>
@@ -101,7 +52,7 @@
                                 blanditiis
                                 pariatur commodi inventore!</p>
                         </div>
-                        <div class="col-4 h_layout_bg--200 h_layout_border_radius">
+                        <div class="col-4 h_bg_elevated h_border">
                             <h2>4 coloumns</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis.</p>
                             <h3>Lorem ipsum dolor sit amet.</h3>
@@ -113,8 +64,58 @@
                 </div>
             </div>
         </div>
-    </section>
-</main>
+    </article>
 
+    <article class="h_component">
+        <div class="h_component__header">
+            <p class="h_text_upper">Typography</p>
+        </div>
+        <div class="h_component__content">
+            <h1>Level-One Heading</h1>
+            <p>What looked like a small patch of purple grass,
+                above
+                five feet square, was moving across the sand in
+                their
+                direction.</p>
+
+            <h2>Level-Two Heading</h2>
+            <p>What looked like a small patch of purple grass,
+                above
+                five feet square, was moving across the sand in
+                their
+                direction.</p>
+
+            <h3>Level-Three Heading</h3>
+            <p>What looked like a small patch of purple grass,
+                above
+                five feet square, was moving across the sand in
+                their
+                direction.</p>
+
+            <h4>Level-Four Heading</h4>
+            <p>What looked like a small patch of purple grass,
+                above
+                five feet square, was moving across the sand in
+                their
+                direction.</p>
+
+            <h5>Level-Five Heading</h5>
+            <p>What looked like a small patch of purple grass,
+                above
+                five feet square, was moving across the sand in
+                their
+                direction.</p>
+
+            <small>Small Text</small>
+            <p class="text_small">— Excerpt from A Voyage to
+                Arcturus,
+                by David Lindsay.</p>
+        </div>
+    </article>
+
+
+</main>
+<aside></aside>
+<footer></footer>
 </body>
 </html>

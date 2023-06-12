@@ -1,0 +1,313 @@
+/*-------------------------------------*\
+  #FONTS
+\*-------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --ff-primary: "Poppins", sans-serif;
+}
+
+/*-------------------------------------*\
+  #COLORS
+\*-------------------------------------*/
+:root {
+  /** UI System **/
+  /* Dark */
+  --clr-d-red: rgb(255, 69, 58);
+  --clr-d-green: rgb(48, 209, 88);
+  --clr-d-blue: rgb(10, 132, 255);
+  --clr-d-orange: rgb(255, 159, 10);
+  --clr-d-purple: rgb(191, 90, 242);
+  /* Light */
+  --clr-l-red: rgb(255, 59, 48);
+  --clr-l-green: rgb(52, 199, 89);
+  --clr-l-blue: rgb(0, 122, 255);
+  --clr-l-orange: rgb(255, 149, 0);
+  --clr-l-purple: rgb(175, 82, 222);
+  /* Background */
+  --clr-bg-base: rgb(0, 0, 0);
+  --clr-bg-elevated: rgb(28, 28, 30);
+  --clr-bg-light: rgb(248, 249, 250);
+  /* Foreground */
+  --clr-fg-b-000: rgb(42, 42, 44);
+  --clr-fg-b-200: rgb(71, 71, 74);
+  --clr-fg-b-400: rgb(141, 141, 147);
+  --clr-fg-b-600: rgb(255, 255, 255);
+  --clr-fg-e-000: rgb(64, 64, 68);
+  --clr-fg-e-200: rgb(90, 90, 94);
+  --clr-fg-e-400: rgb(152, 152, 153);
+  --clr-fg-e-600: rgb(255, 255, 255);
+  --clr-fg-l-000: rgb(0, 0, 0);
+  --clr-fg-l-200: rgb(138, 138, 142);
+  --clr-fg-l-400: rgb(196, 196, 198);
+  --clr-fg-l-600: rgb(220, 220, 221);
+}
+
+/*-------------------------------------*\
+  #RESET
+\*-------------------------------------*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--clr-bg-base);
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--clr-bg-light);
+  }
+}
+
+/*-------------------------------------*\
+  #TYPOGRAPHY
+\*-------------------------------------*/
+html {
+  font-size: 100%;
+} /*16px*/
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .text_small {
+  font-size: 0.8rem;
+}
+
+/*------------------------------------*\
+  #GRID-SYSTEM
+\*------------------------------------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.5rem;
+}
+
+[class^=col-] {
+  grid-column: span 12/span 12;
+  padding: 1rem;
+}
+
+@media (min-width: 48em) {
+  .col-1 {
+    grid-column: span 1/span 1;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-2 {
+    grid-column: span 2/span 2;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-3 {
+    grid-column: span 3/span 3;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-4 {
+    grid-column: span 4/span 4;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-5 {
+    grid-column: span 5/span 5;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-6 {
+    grid-column: span 6/span 6;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-7 {
+    grid-column: span 7/span 7;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-8 {
+    grid-column: span 8/span 8;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-9 {
+    grid-column: span 9/span 9;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-10 {
+    grid-column: span 10/span 10;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-11 {
+    grid-column: span 11/span 11;
+  }
+}
+
+@media (min-width: 48em) {
+  .col-12 {
+    grid-column: span 12/span 12;
+  }
+}
+
+/*-------------------------------------*\
+  #HELPERS
+\*-------------------------------------*/
+.h_text_upper {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h_text_black {
+  font-weight: 900;
+}
+
+.h_text_bold {
+  font-weight: 700;
+}
+
+.h_bg_base {
+  background-color: var(--clr-bg-base);
+}
+@media (prefers-color-scheme: light) {
+  .h_bg_base {
+    background-color: var(--clr-bg-light);
+  }
+}
+
+.h_bg_elevated {
+  background-color: var(--clr-bg-elevated);
+}
+@media (prefers-color-scheme: light) {
+  .h_bg_elevated {
+    background-color: var(--clr-fg-l-600);
+  }
+}
+
+.h_border {
+  border: 1px solid var(--clr-fg-b-000);
+}
+@media (prefers-color-scheme: light) {
+  .h_border {
+    border: 1px solid var(--clr-fg-l-400);
+  }
+}
+
+.h_opacity {
+  opacity: var(--opacity);
+}
+
+.h_flex {
+  max-width: 87.5em;
+  display: flex;
+  padding: 1em;
+  margin: 0 auto;
+}
+.h_flex--column {
+  flex-direction: column;
+}
+
+.h_component {
+  margin: 2em 0;
+}
+
+/*-------------------------------------*\
+  #LINK
+\*-------------------------------------*/
+a {
+  color: var(--clr-d-blue);
+  text-decoration: none;
+}
+@media (prefers-color-scheme: light) {
+  a {
+    color: var(--clr-l-blue);
+  }
+}
+a:active {
+  color: var(--clr-d-red);
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: light) {
+  a:active {
+    color: var(--clr-l-red);
+  }
+}
+a:visited {
+  color: var(--clr-d-purple);
+}
+@media (prefers-color-scheme: light) {
+  a:visited {
+    color: var(--clr-l-purple);
+  }
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--clr-d-red);
+    text-decoration: underline;
+  }
+}
+@media (hover: hover) and (prefers-color-scheme: light) {
+  a:hover {
+    color: var(--clr-l-red);
+  }
+}
+@media (hover: hover) {
+  a:active {
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=basic-style.css.map */

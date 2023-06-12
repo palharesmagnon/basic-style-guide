@@ -1,0 +1,24 @@
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+
+/*------------------------------------*\
+  #GRID-SYSTEM
+\*------------------------------------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: .5rem;
+}
+
+[class^="col-"] {
+  grid-column: span 12 / span 12;
+  padding: 1rem;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include m.respond-up-to(md) {
+      grid-column: span $i / span $i;
+    }
+  }
+}

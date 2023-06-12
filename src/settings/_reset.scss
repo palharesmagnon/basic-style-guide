@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as m;
+
+/*-------------------------------------*\
+  #RESET
+\*-------------------------------------*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--clr-bg-base);
+
+  @include m.prefers('light') {
+    background-color: var(--clr-bg-light);
+  }
+}

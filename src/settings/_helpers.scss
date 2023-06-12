@@ -1,0 +1,61 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/functions" as f;
+
+/*-------------------------------------*\
+  #HELPERS
+\*-------------------------------------*/
+.h_text_upper {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h_text_black {
+  font-weight: 900;
+}
+
+.h_text_bold {
+  font-weight: 700;
+}
+
+.h_bg_base {
+  background-color: var(--clr-bg-base);
+
+  @include m.prefers('light') {
+    background-color: var(--clr-bg-light);
+  }
+}
+
+.h_bg_elevated {
+  background-color: var(--clr-bg-elevated);
+
+  @include m.prefers('light') {
+    background-color: var(--clr-fg-l-600);
+  }
+}
+
+.h_border {
+  border: 1px solid var(--clr-fg-b-000);
+
+  @include m.prefers('light') {
+    border: 1px solid var(--clr-fg-l-400);
+  }
+}
+
+.h_opacity {
+  opacity: var(--opacity);
+}
+
+.h_flex {
+  max-width: f.em(1400);
+  display: flex;
+  padding: f.em(16);
+  margin: 0 auto;
+
+  &--column {
+    flex-direction: column;
+  }
+}
+
+.h_component {
+  margin: f.em(32) 0;
+}
