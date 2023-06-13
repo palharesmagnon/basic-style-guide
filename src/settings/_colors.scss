@@ -5,11 +5,11 @@
 \*-------------------------------------*/
 :root {
   /* Dark Default */
-  --clr-red:       #ff453a;
-  --clr-green:     #30d158;
-  --clr-blue:      #0a84ff;
-  --clr-orange:    #ff9f0a;
-  --clr-purple:    #bf5af2;
+  --clr-red: #ff453a;
+  --clr-green: #30d158;
+  --clr-blue: #0a84ff;
+  --clr-orange: #ff9f0a;
+  --clr-purple: #bf5af2;
 
   --grayscale-100: #414141;
   --grayscale-200: #2d2d2d;
@@ -17,11 +17,11 @@
   --grayscale-400: #000000;
 
   @include m.prefers('light') {
-    --clr-red:       #ff3b30;
-    --clr-green:     #34c759;
-    --clr-blue:      #007aff;
-    --clr-orange:    #ff9500;
-    --clr-purple:    #af52de;
+    --clr-red: #ff3b30;
+    --clr-green: #34c759;
+    --clr-blue: #007aff;
+    --clr-orange: #ff9500;
+    --clr-purple: #af52de;
 
     --grayscale-100: #dfdfdf;
     --grayscale-200: #ececec;
