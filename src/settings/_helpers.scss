@@ -18,16 +18,16 @@
 }
 
 .h_base {
-  background-color: var(--grayscale-400);
+  background-color: var(--clr-gray-5);
 }
 
 .h_elevated {
-  background-color: var(--grayscale-300);
+  background-color: var(--clr-gray-4);
 }
 
 .h_border {
   --border: var(--grayscale-200);
-  border: 1px solid var(--border);
+  border: 1px solid var(--clr-gray-3);
 }
 
 .h_flex {

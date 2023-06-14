@@ -16,10 +16,12 @@
   --clr-blue: #0a84ff;
   --clr-orange: #ff9f0a;
   --clr-purple: #bf5af2;
-  --grayscale-100: #414141;
-  --grayscale-200: #2d2d2d;
-  --grayscale-300: #0f0f0f;
-  --grayscale-400: #000000;
+  --clr-gray-0: #8e8e93;
+  --clr-gray-1: #636366;
+  --clr-gray-2: #48484a;
+  --clr-gray-3: #3a3a3c;
+  --clr-gray-4: #2c2c2e;
+  --clr-gray-5: #1c1c1e;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -28,10 +30,12 @@
     --clr-blue: #007aff;
     --clr-orange: #ff9500;
     --clr-purple: #af52de;
-    --grayscale-100: #dfdfdf;
-    --grayscale-200: #ececec;
-    --grayscale-300: #f7f7f7;
-    --grayscale-400: #fefefe;
+    --clr-gray-0: #8e8e93;
+    --clr-gray-1: #aeaeb2;
+    --clr-gray-2: #c7c7cc;
+    --clr-gray-3: #d1d1d6;
+    --clr-gray-4: #e5e5ea;
+    --clr-gray-5: #f2f2f7;
   }
 }
 
@@ -207,16 +211,16 @@ small, .text_small {
 }
 
 .h_base {
-  background-color: var(--grayscale-400);
+  background-color: var(--clr-gray-5);
 }
 
 .h_elevated {
-  background-color: var(--grayscale-300);
+  background-color: var(--clr-gray-4);
 }
 
 .h_border {
   --border: var(--grayscale-200);
-  border: 1px solid var(--border);
+  border: 1px solid var(--clr-gray-3);
 }
 
 .h_flex {
@@ -260,23 +264,40 @@ a:visited {
 /*-------------------------------------*\
   #COLOR-SAMPLES
 \*-------------------------------------*/
-.color {
+.color-table {
+  max-width: 37.5em;
   display: flex;
   flex-direction: column;
-  background-color: var(--grayscale-200);
-  border: 1px solid var(--grayscale-100);
-}
-.color__sample {
-  --color: #fff;
-  display: grid;
   width: 100%;
-  aspect-ratio: 2;
+}
+.color-table tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--clr-gray-4);
+}
+.color-table tr td {
+  width: 100%;
+  text-align: center;
+  justify-self: stretch;
+  padding: 1em 0.5em;
+}
+
+.sample {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sample .color {
+  align-self: center;
+  display: grid;
+  width: 5em;
+  aspect-ratio: 1;
+  border-radius: 4px;
   background-color: var(--color);
 }
-.color__details {
-  display: flex;
-  flex-direction: column;
-  padding: 0.25em;
+.sample .code {
+  color: var(--clr-gray-1);
 }
 
 /*# sourceMappingURL=basic-style.css.map */
